@@ -1,0 +1,7 @@
+django
+djangorestframework
+psycopg2==2.9.7
+python-decouple
+# pipwin
+
+drf-spectacular>=0.15,<0.16

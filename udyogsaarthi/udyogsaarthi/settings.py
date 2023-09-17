@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 from decouple import config
+# naman
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    # 'core',
+    'core',
     'rest_framework.authtoken',
     'drf_spectacular'
 ]
@@ -111,7 +112,7 @@ REST_FRAMEWORK = {
     # needed for swagger UI
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'webkart.authentication.BearerAuthentication',
+        'udyogsaarthi.authentication.BearerAuthentication',
     )
 }
 
@@ -138,7 +139,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AUTH_USER_MODEL = 'core.User'
+AUTH_USER_MODEL = 'core.User'
 
 #to handle images
 SPECTACULAR_SETTINGS = {
